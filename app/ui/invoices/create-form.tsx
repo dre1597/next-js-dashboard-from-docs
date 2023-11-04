@@ -36,7 +36,9 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 </option>
               ))}
             </select>
-            <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
+            <UserCircleIcon
+              className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500"
+            />
             {state.errors?.customerId ? (
               <div
                 id="customer-error"
@@ -67,7 +69,9 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
                 required
               />
-              <CurrencyDollarIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
+              <CurrencyDollarIcon
+                className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900"
+              />
             </div>
           </div>
         </div>
@@ -91,7 +95,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   htmlFor="pending"
                   className="ml-2 flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600 dark:text-gray-300"
                 >
-                  Pending <ClockIcon className="h-4 w-4" />
+                  Pending <ClockIcon className="h-4 w-4"/>
                 </label>
               </div>
               <div className="flex items-center">
@@ -106,7 +110,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   htmlFor="paid"
                   className="ml-2 flex items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white dark:text-gray-300"
                 >
-                  Paid <CheckIcon className="h-4 w-4" />
+                  Paid <CheckIcon className="h-4 w-4"/>
                 </label>
               </div>
             </div>

@@ -22,7 +22,7 @@ export default async function Page(
     fetchCustomers(),
   ]);
 
-  if(!invoice) {
+  if (!invoice) {
     notFound();
   }
 

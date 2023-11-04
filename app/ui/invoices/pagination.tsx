@@ -59,17 +59,18 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
   );
 }
 
-function PaginationNumber({
-  page,
-  href,
-  isActive,
-  position,
-}: {
-  page: number | string;
-  href: string;
-  position?: 'first' | 'last' | 'middle' | 'single';
-  isActive: boolean;
-}) {
+function PaginationNumber(
+  {
+    page,
+    href,
+    isActive,
+    position,
+  }: {
+    page: number | string;
+    href: string;
+    position?: 'first' | 'last' | 'middle' | 'single';
+    isActive: boolean;
+  }) {
   const className = clsx(
     'flex h-10 w-10 items-center justify-center text-sm border',
     {
@@ -90,15 +91,16 @@ function PaginationNumber({
   );
 }
 
-function PaginationArrow({
-  href,
-  direction,
-  isDisabled,
-}: {
-  href: string;
-  direction: 'left' | 'right';
-  isDisabled?: boolean;
-}) {
+function PaginationArrow(
+  {
+    href,
+    direction,
+    isDisabled,
+  }: {
+    href: string;
+    direction: 'left' | 'right';
+    isDisabled?: boolean;
+  }) {
   const className = clsx(
     'flex h-10 w-10 items-center justify-center rounded-md border',
     {
@@ -111,9 +113,9 @@ function PaginationArrow({
 
   const icon =
     direction === 'left' ? (
-      <ArrowLeftIcon className="w-4" />
+      <ArrowLeftIcon className="w-4"/>
     ) : (
-      <ArrowRightIcon className="w-4" />
+      <ArrowRightIcon className="w-4"/>
     );
 
   return isDisabled ? (
